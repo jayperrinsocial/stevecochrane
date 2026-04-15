@@ -439,3 +439,52 @@ a:hover {
     font-size: 1.25rem;
   }
 }
+/* ===== ME PAGE ===== */
+
+.bio-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.bio-copy h1 {
+  margin: 0 0 24px;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.bio-copy p {
+  margin: 0 0 18px;
+  font-size: 1.05rem;
+  color: #2d2d2d;
+}
+
+.bio-image-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.bio-image {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 20px;
+  background: #e9e9e4;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .bio-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .bio-image {
+    max-width: 100%;
+  }
+}
